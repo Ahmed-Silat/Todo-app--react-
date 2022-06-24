@@ -69,7 +69,7 @@ function App() {
 
         <ul>
           {list.map((item, index) => {
-            return <li>{item}
+            return <li style={editIndex === index ? { backgroundColor: 'red' } : {}}>{item}
               <button onClick={() => deleteItem(index)}>Delete</button>
               <button onClick={() => editItem(index)}>Edit</button>
             </li>
@@ -77,8 +77,8 @@ function App() {
         </ul>
 
         <br />
-      </header>
-    </div>
+      </header >
+    </div >
   );
 }
 
